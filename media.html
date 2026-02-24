@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page3</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<meta name="description" content="This website provides information about football">
+  </head>
+  <body>
+    <h2>My Favorite Song</h2>
+    <!-- First audio: autoplay + muted -->
+
+    <audio controls autoplay mutedpreload="auto" >
+      <source src="Recording.m4a" type="audio/mpeg">
+
+        Your browser does not support the audio element.
+
+    </audio>
+
+        <br><br>
+
+        <!-- Second audio: loop forever -->
+    <audio controls loop preload="metadata" >
+      <source src="Recording.m4a" type="audio/mpeg">
+
+        Your browser does not support the audio element.
+
+    </audio>
+            <br><br>
+
+
+        <!-- Third audio: test preload="none" -->
+ <audio controls preload="none">
+        <source src="Recording.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+
+
+
+
+  <!-- Video Section -->
+  <h2>My Favorite Video</h2>
+
+  <!-- Normal video with controls -->
+  <video width="400" controls poster="poster-image.jpg" preload="metadata"border: 3px solid red>
+     <source src="WIN_20260223_22_07_18_Pro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+  <br><br>
+
+  <!-- Background-style looping video -->
+  <video width="400" autoplay muted loop border: 3px solid red>
+      <source src="WIN_20260223_22_07_18_Pro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+
+ <h2>Embedded Content</h2>
+
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    title="YouTube video"
+    style="border:4px solid red;">
+</iframe>
+
+<br><br>
+
+<iframe
+    width="560"
+    height="315"
+    src="https://www.google.com/maps?q=Eiffel+Tower&output=embed"
+    title="Google Maps"
+    style="border:4px solid blue;">
+</iframe>
+
+  </body>
+</html>

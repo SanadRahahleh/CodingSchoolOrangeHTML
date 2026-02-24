@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+</head>
+<body>
+
+    <h2>User Registration Form</h2>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <!-- Name input -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br><br>
+
+        <!-- Email input (required) -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password input -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Profile Picture Upload -->
+        <label for="profile">Profile Picture:</label><br>
+        <input type="file" id="profile" name="profile" accept="image/*">
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+
+    <!-- User Preferences Form -->
+    <h2>User Preferences</h2>
+
+    <form action="#" method="post">
+
+        <!-- About Me textarea -->
+        <label for="about">About Me:</label><br>
+        <textarea id="about" name="about" rows="4" cols="40" placeholder="Write something about yourself..."></textarea>
+        <br><br>
+
+        <!-- Country select menu -->
+        <label for="country">Country:</label><br>
+        <select id="country" name="country">
+            <option value="">--Select your country--</option>
+            <option value="jordan">Jordan</option>
+            <option value="egypt">Egypt</option>
+            <option value="usa">USA</option>
+        </select>
+        <br><br>
+
+        <!-- Contact Preference fieldset -->
+        <fieldset>
+            <legend>Contact Preference:</legend>
+
+            <input type="radio" id="contact-email" name="contact" value="email">
+            <label for="contact-email">Email</label><br>
+
+            <input type="radio" id="contact-phone" name="contact" value="phone">
+            <label for="contact-phone">Phone</label>
+
+        </fieldset>
+        <br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Save Preferences">
+
+    </form>
+
+
+    <h2>Email Submission Form</h2>
+
+<form action="https://example.com/submit" 
+      method="Get" 
+      target="_blank" 
+      autocomplete="off">
+
+    <!-- Email input -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+
+</form>
+
+
+    <h2>Survey Form</h2>
+
+<form action="#" method="Get">
+
+    <!-- Username -->
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" maxlength="10" placeholder="Enter username" required>
+    <br><br>
+
+    <!-- Age -->
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="18" max="60" placeholder="Enter your age">
+    <br><br>
+
+    <!-- Favorite Programming Language -->
+    <label for="language">Favorite Programming Language:</label><br>
+    <input list="languages" id="language" name="language" placeholder="Choose or type">
+    <datalist id="languages">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+        <option value="Python">
+    </datalist>
+    <br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit Survey">
+
+</form>
+
+</body>
+</html>

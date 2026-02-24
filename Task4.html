@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Task4</title>
+</head>
+<body>
+
+<form action="#" method="get" style="border:2px solid #090909; padding:10px;">
+    <h2>Fill in your information</h2>
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" style="width:300px;"><br><br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" style="width:300px;"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" style="width:300px;"><br><br>
+
+    <label><strong>Your Gender</strong></label><br>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female<br><br>
+
+    <label><strong>Favorite Subjects</strong></label><br>
+    <input type="checkbox" name="subject" value="C++"> C++
+    <input type="checkbox" name="subject" value="Java"> Java
+    <input type="checkbox" name="subject" value="C#"> C#
+    <input type="checkbox" name="subject" value="PHP"> PHP
+    <input type="checkbox" name="subject" value="SQL"> SQL<br><br>
+
+    <label for="city"><strong>Your City </strong></label>
+    <select id="city" name="city" style="width:200px;">
+        <option value="irbid">Irbid</option>
+        <option value="amman">Amman</option>
+        <option value="zarqa">Zarqa</option>
+    </select><br><br>
+
+    <label for="image">Upload Image: </label>
+    <input type="file" name="image" style="width:400px;"><br><br>
+
+    <label for="about">Write About yourself:</label><br>
+    <textarea placeholder="Write Here" name="about" rows="4" style="width:400px;height: 150px;"></textarea><br><br>
+
+    <input type="submit" value="Submit" style="width:100px; ;">
+</form>
+
+</body>
+</html>
